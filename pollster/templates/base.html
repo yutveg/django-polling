@@ -14,11 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center" style="margin: 200px auto 0 auto;">
-          {% block content %}{% endblock %}
-        </div>
-      </div>
+      {% block content %}{% endblock %} {% block home %}{% endblock %}
     </div>
   </body>
 </html>
