@@ -1,5 +1,15 @@
 {% extends 'base.html' %} {% block home %}
 <h1>hi</h1>
-{% endblock %} {% block content %}
-<h2>hello</h2>
+<h2>{{ test }}</h2>
+<ul>
+  {% for item in test_list %}
+  <li>
+    {{ forloop.counter }}: {{ item }}
+  </li>
+  {% if item > 5 %}
+  <p>big boy</p>
+  {% else %}
+  <p>lil boy</p>
+  {% endif %} {% endfor %}
+</ul>
 {% endblock %}
